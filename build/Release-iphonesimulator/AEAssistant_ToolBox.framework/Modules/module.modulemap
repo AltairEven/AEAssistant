@@ -1,0 +1,6 @@
+framework module AEAssistant_ToolBox {
+  umbrella header "AEAssistant_ToolBox.h"
+
+  export *
+  module * { export * }
+}
