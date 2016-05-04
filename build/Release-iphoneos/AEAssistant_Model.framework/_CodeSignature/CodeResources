@@ -6,7 +6,7 @@
 	<dict>
 		<key>Headers/AEAssistant_Model.h</key>
 		<data>
-		yJ6t4zu0hiUzj9qw6NyL8d8iBKY=
+		smpdtcpIUal+3rIEVTgD0mH15KI=
 		</data>
 		<key>Headers/AELocation.h</key>
 		<data>
@@ -18,7 +18,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		DuRfztMD+gDxaSOUQ/Qu1vlCsBY=
+		Z2zn9LMQ3qr2IgphpKhmO4XKwYA=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -31,11 +31,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			yJ6t4zu0hiUzj9qw6NyL8d8iBKY=
+			smpdtcpIUal+3rIEVTgD0mH15KI=
 			</data>
 			<key>hash2</key>
 			<data>
-			U1mSdvCvHknQh5+Cdk9+3Iqt/VlZXJbwWOaTa/7bess=
+			AauNF9tSz+m1MYPv7LQeLKQsv9J024lWD1b20LlmbEY=
 			</data>
 		</dict>
 		<key>Headers/AELocation.h</key>

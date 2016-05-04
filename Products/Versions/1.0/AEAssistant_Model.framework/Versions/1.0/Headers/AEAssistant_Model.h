@@ -16,6 +16,7 @@ FOUNDATION_EXPORT const unsigned char AEAssistant_ModelVersionString[];
 
 // In this header, you should import all the public headers of your framework using statements like #import <AEAssistant_Model/PublicHeader.h>
 
+#import <AEAssistant_Network/AEAssistant_Network.h>
 
 
 #import "AENormalUser.h"

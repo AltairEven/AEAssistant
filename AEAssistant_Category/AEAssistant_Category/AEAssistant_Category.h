@@ -16,6 +16,8 @@ FOUNDATION_EXPORT const unsigned char AEAssistant_CategoryVersionString[];
 
 // In this header, you should import all the public headers of your framework using statements like #import <AEAssistant_Category/PublicHeader.h>
 
+#import <AEAssistant_ThirdParty/AEAssistant_ThirdParty.h>
+
 //NSDate
 #import "NSDate+Convertion.h"
 #import "NSDate+CommonDate.h"
@@ -61,4 +63,8 @@ FOUNDATION_EXPORT const unsigned char AEAssistant_CategoryVersionString[];
 #import "UIView+Creation.h"
 #import "UIView+Snapshot.h"
 #import "UIView+Rendering.h"
+
+
+//UILabel
+#import "UILabel+Additions.h"
 

@@ -6,7 +6,7 @@
 	<dict>
 		<key>Headers/AEAssistant_Manager.h</key>
 		<data>
-		7St0hf4A46Mhdd5dRsuHAZPzaUc=
+		Cl2H6K2c9ArldxinEhjWemrkTbE=
 		</data>
 		<key>Headers/KTCImageUploader.h</key>
 		<data>
@@ -18,7 +18,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		jyPDAIUW05tCexAaDUV9UOnPSAo=
+		aHUPQu5Wo2SLbHIHytL9Gc0dpJg=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -31,11 +31,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			7St0hf4A46Mhdd5dRsuHAZPzaUc=
+			Cl2H6K2c9ArldxinEhjWemrkTbE=
 			</data>
 			<key>hash2</key>
 			<data>
-			vqSN/QytDsjLxS2m99gHBucbB0R5GOqvFg9ShjoBOOU=
+			wzYFAoTiiQtqkG2BewhUUO2PBsF/JemgwYh+WQA1a9E=
 			</data>
 		</dict>
 		<key>Headers/KTCImageUploader.h</key>

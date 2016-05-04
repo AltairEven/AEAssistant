@@ -16,6 +16,7 @@ FOUNDATION_EXPORT const unsigned char AEAssistant_ToolBoxVersionString[];
 
 // In this header, you should import all the public headers of your framework using statements like #import <AEAssistant_ToolBox/PublicHeader.h>
 
+#import <AEAssistant_Category/AEAssistant_Category.h>
 
 #import "AEEnumeration.h"
 #import "AEMacro.h"

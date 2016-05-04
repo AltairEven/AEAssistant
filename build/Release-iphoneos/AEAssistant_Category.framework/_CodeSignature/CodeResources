@@ -6,7 +6,7 @@
 	<dict>
 		<key>Headers/AEAssistant_Category.h</key>
 		<data>
-		pcg5Uzy9HBIYioBQ8AzB4R0uFYA=
+		S82B2lSEH79Fe00oxmVHgOZm/zY=
 		</data>
 		<key>Headers/NSAttributedString+Attributes.h</key>
 		<data>
@@ -62,7 +62,7 @@
 		</data>
 		<key>Headers/NSString+XXTEA.h</key>
 		<data>
-		JzUn/mKlUdiSokq1Y2Jm4XqXSfg=
+		eFo673XiE7hPBkIh4u0PeQ6MxCM=
 		</data>
 		<key>Headers/UIButton+Color.h</key>
 		<data>
@@ -84,6 +84,10 @@
 		<data>
 		P1JDVyGlcQKcs67sJCR0rkM3HI4=
 		</data>
+		<key>Headers/UILabel+Additions.h</key>
+		<data>
+		RygRMSJVvg3U0cl8NsGXAPSVtZc=
+		</data>
 		<key>Headers/UINavigationBar+BackgroundColor.h</key>
 		<data>
 		Np/r+IZvFDIw60roAMdYZ9hmQ7I=
@@ -98,7 +102,7 @@
 		</data>
 		<key>Headers/UIView+Creation.h</key>
 		<data>
-		BTn1Rcxe5YzPxn7k0b8GCIt5R1I=
+		XCvNB6+HKTT5GjEUVGrhy1Q3JxQ=
 		</data>
 		<key>Headers/UIView+Rendering.h</key>
 		<data>
@@ -114,7 +118,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		HOHU6ZM7726S9cnM9EO3D9wtjQs=
+		duYceRltYHOdDbz6kQHgGV0PX2w=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -127,11 +131,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			pcg5Uzy9HBIYioBQ8AzB4R0uFYA=
+			S82B2lSEH79Fe00oxmVHgOZm/zY=
 			</data>
 			<key>hash2</key>
 			<data>
-			muz9VMRyYP0RkBTHlG+G5Tt3rWP+29TpiN+0LN9zc7o=
+			UToXgl+UvCe7tz9wnGEfHP/6C+z3XJBBtabVlBaI5Pw=
 			</data>
 		</dict>
 		<key>Headers/NSAttributedString+Attributes.h</key>
@@ -281,11 +285,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			JzUn/mKlUdiSokq1Y2Jm4XqXSfg=
+			eFo673XiE7hPBkIh4u0PeQ6MxCM=
 			</data>
 			<key>hash2</key>
 			<data>
-			FwFUDZW1Vs+bK1Ax7kWe1gfAVAnChQUbShggHPdfEJw=
+			CVd6H41iiPybolWSdZ2Txh9Cg2ZHXkNICzt/et43vSM=
 			</data>
 		</dict>
 		<key>Headers/UIButton+Color.h</key>
@@ -343,6 +347,17 @@
 			0OeGSY1I+jQGQmOvoFKU/PrXuvGY40wHN8VCui0hDpk=
 			</data>
 		</dict>
+		<key>Headers/UILabel+Additions.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			RygRMSJVvg3U0cl8NsGXAPSVtZc=
+			</data>
+			<key>hash2</key>
+			<data>
+			FT4kJRAP5ON+kMVlQTp3oAMOnYa2nFik3BNVIh/vRnM=
+			</data>
+		</dict>
 		<key>Headers/UINavigationBar+BackgroundColor.h</key>
 		<dict>
 			<key>hash</key>
@@ -380,11 +395,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			BTn1Rcxe5YzPxn7k0b8GCIt5R1I=
+			XCvNB6+HKTT5GjEUVGrhy1Q3JxQ=
 			</data>
 			<key>hash2</key>
 			<data>
-			vzq+Wq7iVUScorDwafgCjnQvX6DQzR75xDFLbH4t7cc=
+			3vNe+JmgxcjPM9PajZryPXcas2/B6tTavQHdFsFInlo=
 			</data>
 		</dict>
 		<key>Headers/UIView+Rendering.h</key>

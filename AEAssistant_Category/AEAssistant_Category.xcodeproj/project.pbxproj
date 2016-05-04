@@ -21,6 +21,7 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
+		1E0B9D341CDA05630050DB7E /* AEAssistant_ThirdParty.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E0B9D331CDA05630050DB7E /* AEAssistant_ThirdParty.framework */; };
 		1E20BE691CCE06E8001BD6C9 /* AEAssistant_Category.h in Headers */ = {isa = PBXBuildFile; fileRef = 1E20BE681CCE06E8001BD6C9 /* AEAssistant_Category.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		1E20BEAF1CCE076A001BD6C9 /* NSDate+CommonDate.h in Headers */ = {isa = PBXBuildFile; fileRef = 1E20BE721CCE076A001BD6C9 /* NSDate+CommonDate.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		1E20BEB01CCE076A001BD6C9 /* NSDate+CommonDate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E20BE731CCE076A001BD6C9 /* NSDate+CommonDate.m */; };
@@ -74,10 +75,12 @@
 		1E20BEE01CCE076A001BD6C9 /* UIView+Snapshot.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E20BEAC1CCE076A001BD6C9 /* UIView+Snapshot.m */; };
 		1E20BEE11CCE076A001BD6C9 /* UIView+ViewHierarchy.h in Headers */ = {isa = PBXBuildFile; fileRef = 1E20BEAD1CCE076A001BD6C9 /* UIView+ViewHierarchy.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		1E20BEE21CCE076A001BD6C9 /* UIView+ViewHierarchy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E20BEAE1CCE076A001BD6C9 /* UIView+ViewHierarchy.m */; };
-		1E20BEF51CCE1198001BD6C9 /* AEAssistant_ThirdParty.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E20BEF41CCE1198001BD6C9 /* AEAssistant_ThirdParty.framework */; };
+		1EAAC5BE1CD9894C0005A4F7 /* UILabel+Additions.h in Headers */ = {isa = PBXBuildFile; fileRef = 1EAAC5BC1CD9894C0005A4F7 /* UILabel+Additions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1EAAC5BF1CD9894C0005A4F7 /* UILabel+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EAAC5BD1CD9894C0005A4F7 /* UILabel+Additions.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1E0B9D331CDA05630050DB7E /* AEAssistant_ThirdParty.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AEAssistant_ThirdParty.framework; path = "../build/Release-iphoneos/AEAssistant_ThirdParty.framework"; sourceTree = "<group>"; };
 		1E20BE651CCE06E8001BD6C9 /* AEAssistant_Category.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AEAssistant_Category.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1E20BE681CCE06E8001BD6C9 /* AEAssistant_Category.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AEAssistant_Category.h; sourceTree = "<group>"; };
 		1E20BE6A1CCE06E8001BD6C9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -133,7 +136,8 @@
 		1E20BEAC1CCE076A001BD6C9 /* UIView+Snapshot.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Snapshot.m"; sourceTree = "<group>"; };
 		1E20BEAD1CCE076A001BD6C9 /* UIView+ViewHierarchy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+ViewHierarchy.h"; sourceTree = "<group>"; };
 		1E20BEAE1CCE076A001BD6C9 /* UIView+ViewHierarchy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+ViewHierarchy.m"; sourceTree = "<group>"; };
-		1E20BEF41CCE1198001BD6C9 /* AEAssistant_ThirdParty.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AEAssistant_ThirdParty.framework; path = "../../../../Library/Developer/Xcode/DerivedData/AEAssistant-akgcrcjngfmswaefvmkbofjiwqur/Build/Products/Debug-iphoneos/AEAssistant_ThirdParty.framework"; sourceTree = "<group>"; };
+		1EAAC5BC1CD9894C0005A4F7 /* UILabel+Additions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+Additions.h"; sourceTree = "<group>"; };
+		1EAAC5BD1CD9894C0005A4F7 /* UILabel+Additions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+Additions.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -141,7 +145,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1E20BEF51CCE1198001BD6C9 /* AEAssistant_ThirdParty.framework in Frameworks */,
+				1E0B9D341CDA05630050DB7E /* AEAssistant_ThirdParty.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -151,7 +155,7 @@
 		1E20BE5B1CCE06E8001BD6C9 = {
 			isa = PBXGroup;
 			children = (
-				1E20BEF41CCE1198001BD6C9 /* AEAssistant_ThirdParty.framework */,
+				1E0B9D331CDA05630050DB7E /* AEAssistant_ThirdParty.framework */,
 				1E20BE671CCE06E8001BD6C9 /* AEAssistant_Category */,
 				1E20BE661CCE06E8001BD6C9 /* Products */,
 			);
@@ -237,6 +241,7 @@
 				1E20BE9E1CCE076A001BD6C9 /* UINavigationController */,
 				1E20BEA11CCE076A001BD6C9 /* UITabBarController */,
 				1E20BEA41CCE076A001BD6C9 /* UIView */,
+				1EAAC5BB1CD9894C0005A4F7 /* UILabel */,
 			);
 			path = UIKit;
 			sourceTree = "<group>";
@@ -314,6 +319,15 @@
 			path = UIView;
 			sourceTree = "<group>";
 		};
+		1EAAC5BB1CD9894C0005A4F7 /* UILabel */ = {
+			isa = PBXGroup;
+			children = (
+				1EAAC5BC1CD9894C0005A4F7 /* UILabel+Additions.h */,
+				1EAAC5BD1CD9894C0005A4F7 /* UILabel+Additions.m */,
+			);
+			path = UILabel;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -347,6 +361,7 @@
 				1E20BEAF1CCE076A001BD6C9 /* NSDate+CommonDate.h in Headers */,
 				1E20BE691CCE06E8001BD6C9 /* AEAssistant_Category.h in Headers */,
 				1E20BED71CCE076A001BD6C9 /* UITabBar+Badge.h in Headers */,
+				1EAAC5BE1CD9894C0005A4F7 /* UILabel+Additions.h in Headers */,
 				1E20BEB31CCE076A001BD6C9 /* NSAttributedString+Attributes.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -447,6 +462,7 @@
 				1E20BEB01CCE076A001BD6C9 /* NSDate+CommonDate.m in Sources */,
 				1E20BEDE1CCE076A001BD6C9 /* UIView+Rendering.m in Sources */,
 				1E20BEBE1CCE076A001BD6C9 /* NSString+Html.m in Sources */,
+				1EAAC5BF1CD9894C0005A4F7 /* UILabel+Additions.m in Sources */,
 				1E20BECA1CCE076A001BD6C9 /* NSString+XXTEA.m in Sources */,
 				1E20BEBA1CCE076A001BD6C9 /* NSString+DetectEmoji.m in Sources */,
 				1E20BEC01CCE076A001BD6C9 /* NSString+MD5Addition.m in Sources */,
@@ -661,6 +677,7 @@
 				1E20C0E41CCF0267001BD6C9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

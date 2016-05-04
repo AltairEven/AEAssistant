@@ -26,8 +26,10 @@
 		1E20BF841CCE1E9D001BD6C9 /* KTCImageUploader.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E20BF7C1CCE1E9D001BD6C9 /* KTCImageUploader.m */; };
 		1E20BF871CCE1E9D001BD6C9 /* KTCThemeManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 1E20BF811CCE1E9D001BD6C9 /* KTCThemeManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		1E20BF881CCE1E9D001BD6C9 /* KTCThemeManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E20BF821CCE1E9D001BD6C9 /* KTCThemeManager.m */; };
-		1E20BF8A1CCE1F0A001BD6C9 /* AEAssistant_Network.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E20BF891CCE1F0A001BD6C9 /* AEAssistant_Network.framework */; };
-		1E20BF8C1CCE1FA2001BD6C9 /* AEAssistant_ToolBox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E20BF8B1CCE1FA2001BD6C9 /* AEAssistant_ToolBox.framework */; };
+		1EAAC3B81CD873670005A4F7 /* AEAssistant_Network.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1EAAC3B61CD873670005A4F7 /* AEAssistant_Network.framework */; };
+		1EAAC3B91CD873670005A4F7 /* AEAssistant_ToolBox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1EAAC3B71CD873670005A4F7 /* AEAssistant_ToolBox.framework */; };
+		1EAAC3BB1CD8737D0005A4F7 /* AEAssistant_ThirdParty.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1EAAC3BA1CD8737D0005A4F7 /* AEAssistant_ThirdParty.framework */; };
+		1EAAC3BD1CD873890005A4F7 /* AEAssistant_Category.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1EAAC3BC1CD873890005A4F7 /* AEAssistant_Category.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,8 +40,10 @@
 		1E20BF7C1CCE1E9D001BD6C9 /* KTCImageUploader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KTCImageUploader.m; sourceTree = "<group>"; };
 		1E20BF811CCE1E9D001BD6C9 /* KTCThemeManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KTCThemeManager.h; sourceTree = "<group>"; };
 		1E20BF821CCE1E9D001BD6C9 /* KTCThemeManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KTCThemeManager.m; sourceTree = "<group>"; };
-		1E20BF891CCE1F0A001BD6C9 /* AEAssistant_Network.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AEAssistant_Network.framework; path = "../../../../Library/Developer/Xcode/DerivedData/AEAssistant-akgcrcjngfmswaefvmkbofjiwqur/Build/Products/Debug-iphoneos/AEAssistant_Network.framework"; sourceTree = "<group>"; };
-		1E20BF8B1CCE1FA2001BD6C9 /* AEAssistant_ToolBox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AEAssistant_ToolBox.framework; path = "../../../../Library/Developer/Xcode/DerivedData/AEAssistant-akgcrcjngfmswaefvmkbofjiwqur/Build/Products/Debug-iphoneos/AEAssistant_ToolBox.framework"; sourceTree = "<group>"; };
+		1EAAC3B61CD873670005A4F7 /* AEAssistant_Network.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AEAssistant_Network.framework; path = "../../../../../Library/Developer/Xcode/DerivedData/AEAssistant-akgcrcjngfmswaefvmkbofjiwqur/Build/Products/Debug-iphoneos/AEAssistant_Network.framework"; sourceTree = "<group>"; };
+		1EAAC3B71CD873670005A4F7 /* AEAssistant_ToolBox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AEAssistant_ToolBox.framework; path = "../../../../../Library/Developer/Xcode/DerivedData/AEAssistant-akgcrcjngfmswaefvmkbofjiwqur/Build/Products/Debug-iphoneos/AEAssistant_ToolBox.framework"; sourceTree = "<group>"; };
+		1EAAC3BA1CD8737D0005A4F7 /* AEAssistant_ThirdParty.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AEAssistant_ThirdParty.framework; path = "../../../../../Library/Developer/Xcode/DerivedData/AEAssistant-akgcrcjngfmswaefvmkbofjiwqur/Build/Products/Debug-iphoneos/AEAssistant_ThirdParty.framework"; sourceTree = "<group>"; };
+		1EAAC3BC1CD873890005A4F7 /* AEAssistant_Category.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AEAssistant_Category.framework; path = "../../../../../Library/Developer/Xcode/DerivedData/AEAssistant-akgcrcjngfmswaefvmkbofjiwqur/Build/Products/Debug-iphoneos/AEAssistant_Category.framework"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,8 +51,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1E20BF8C1CCE1FA2001BD6C9 /* AEAssistant_ToolBox.framework in Frameworks */,
-				1E20BF8A1CCE1F0A001BD6C9 /* AEAssistant_Network.framework in Frameworks */,
+				1EAAC3BD1CD873890005A4F7 /* AEAssistant_Category.framework in Frameworks */,
+				1EAAC3BB1CD8737D0005A4F7 /* AEAssistant_ThirdParty.framework in Frameworks */,
+				1EAAC3B81CD873670005A4F7 /* AEAssistant_Network.framework in Frameworks */,
+				1EAAC3B91CD873670005A4F7 /* AEAssistant_ToolBox.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -58,8 +64,10 @@
 		1E20BF651CCE1E7B001BD6C9 = {
 			isa = PBXGroup;
 			children = (
-				1E20BF8B1CCE1FA2001BD6C9 /* AEAssistant_ToolBox.framework */,
-				1E20BF891CCE1F0A001BD6C9 /* AEAssistant_Network.framework */,
+				1EAAC3BC1CD873890005A4F7 /* AEAssistant_Category.framework */,
+				1EAAC3BA1CD8737D0005A4F7 /* AEAssistant_ThirdParty.framework */,
+				1EAAC3B61CD873670005A4F7 /* AEAssistant_Network.framework */,
+				1EAAC3B71CD873670005A4F7 /* AEAssistant_ToolBox.framework */,
 				1E20BF711CCE1E7B001BD6C9 /* AEAssistant_Manager */,
 				1E20BF701CCE1E7B001BD6C9 /* Products */,
 			);
@@ -77,8 +85,8 @@
 			isa = PBXGroup;
 			children = (
 				1E20BF721CCE1E7B001BD6C9 /* AEAssistant_Manager.h */,
-				1E20BF7A1CCE1E9D001BD6C9 /* ImageUpload */,
 				1E20BF801CCE1E9D001BD6C9 /* Theme */,
+				1E20BF7A1CCE1E9D001BD6C9 /* ImageUpload */,
 				1E20BF741CCE1E7B001BD6C9 /* Info.plist */,
 			);
 			path = AEAssistant_Manager;
@@ -313,6 +321,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = "../build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
 				INFOPLIST_FILE = AEAssistant_Manager/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
@@ -336,6 +345,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = "../build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
 				INFOPLIST_FILE = AEAssistant_Manager/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
@@ -390,6 +400,7 @@
 				1E20C0D51CCF021F001BD6C9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

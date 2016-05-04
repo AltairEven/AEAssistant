@@ -150,12 +150,12 @@
 
 
 + (void)setHasFirstLaunched:(BOOL)has {
-    [[NSUserDefaults standardUserDefaults] setObject:[NSNumber numberWithInteger:has] forKey:[AEToolUtil currentAppVersion]];
+    [[NSUserDefaults standardUserDefaults] setObject:[NSNumber numberWithBool:has] forKey:[AEToolUtil currentAppVersion]];
     [[NSUserDefaults standardUserDefaults] synchronize];
 }
 
 + (BOOL)hasFirstLaunched {
-    BOOL has = [[NSUserDefaults standardUserDefaults] objectForKey:[AEToolUtil currentAppVersion]];
+    BOOL has = [[[NSUserDefaults standardUserDefaults] objectForKey:[AEToolUtil currentAppVersion]] boolValue];
     return has;
 }
 

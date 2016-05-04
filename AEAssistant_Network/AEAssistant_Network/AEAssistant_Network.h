@@ -16,6 +16,8 @@ FOUNDATION_EXPORT const unsigned char AEAssistant_NetworkVersionString[];
 
 // In this header, you should import all the public headers of your framework using statements like #import <AEAssistant_Network/PublicHeader.h>
 
+#import <AEAssistant_ToolBox/AEAssistant_ToolBox.h>
+
 #import "HttpRequestClient.h"
 #import "AEReachability.h"
 #import "AEHttpCookieManager.h"

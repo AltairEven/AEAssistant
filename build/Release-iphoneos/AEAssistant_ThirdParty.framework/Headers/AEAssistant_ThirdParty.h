@@ -17,8 +17,6 @@ FOUNDATION_EXPORT const unsigned char AEAssistant_ThirdPartyVersionString[];
 // In this header, you should import all the public headers of your framework using statements like #import <AEAssistant_ThirdParty/PublicHeader.h>
 
 
-
-
 //AFNetworking
 #import "AFNetworking.h"
 
@@ -54,3 +52,34 @@ FOUNDATION_EXPORT const unsigned char AEAssistant_ThirdPartyVersionString[];
 
 //RegexKitLite
 #import "RegexKitLite.h"
+
+
+//DACircularProgress
+#import "DACircularProgressView.h"
+#import "DALabeledCircularProgressView.h"
+
+
+//MBProgressHUD
+#import "MBProgressHUD.h"
+
+
+//MWPhotoBrowser
+#import "MWCaptionView.h"
+#import "MWCommon.h"
+#import "MWGridCell.h"
+#import "MWGridViewController.h"
+#import "MWPhoto.h"
+#import "MWPhotoBrowser.h"
+#import "MWPhotoProtocol.h"
+#import "MWTapDetectingImageView.h"
+#import "MWTapDetectingView.h"
+#import "MWZoomingScrollView.h"
+#import "UIImage+MWPhotoBrowser.h"
+
+
+
+
+
+
+
+

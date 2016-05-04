@@ -22,7 +22,6 @@
 
 
 #import <Foundation/Foundation.h>
-#import <AEAssistant_ThirdParty/AEAssistant_ThirdParty.h>
 
 @interface NSString (XXTEA)
 

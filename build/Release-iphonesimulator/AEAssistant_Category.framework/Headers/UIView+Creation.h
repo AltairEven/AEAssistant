@@ -14,7 +14,7 @@
     static BOOL bLoad;\
     if (!bLoad) {\
         bLoad = YES;\
-        Class *view = [GConfig getObjectFromNibWithView:self];\
+        Class *view = [self getObjectFromNib];\
         [view buildSubviews];\
         return view;\
     }\

@@ -22,6 +22,8 @@
 
 
 #import "NSString+XXTEA.h"
+//#import <AEAssistant_ThirdParty/GTMBase64.h>
+#import "AEAssistant_ThirdParty/GTMBase64.h"
 
 
 typedef uint32_t xxtea_long;
