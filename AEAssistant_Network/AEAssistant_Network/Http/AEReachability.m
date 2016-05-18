@@ -61,14 +61,56 @@ static AEReachability *_sharedManager = nil;
     
     __weak typeof(self) weakSelf = self;
     [weakSelf.reachabilityManager setReachabilityStatusChangeBlock:^(AFNetworkReachabilityStatus status){
-        _status = (AENetworkStatus)status;
-        if (status == AFNetworkReachabilityStatusReachableViaWiFi || status == AFNetworkReachabilityStatusReachableViaWWAN) {
-            _isNetworkStatusOK = YES;
-        } else {
-            _isNetworkStatusOK = NO;
+        AENetworkStatus netStatus = AENetworkStatusUnknown;
+        switch (status) {
+            case AFNetworkReachabilityStatusUnknown:
+            {
+                _isNetworkStatusOK = NO;
+                _status = AENetworkStatusUnknown;
+                netStatus = AENetworkStatusUnknown;
+            }
+                break;
+            case AFNetworkReachabilityStatusNotReachable:
+            {
+                _isNetworkStatusOK = NO;
+                _status = AENetworkStatusNotReachable;
+                netStatus = AENetworkStatusNotReachable;
+            }
+                break;
+            case AFNetworkReachabilityStatusReachableViaWWAN:
+            {
+                _isNetworkStatusOK = YES;
+                //os version > 7.0
+                CTTelephonyNetworkInfo *info = [[CTTelephonyNetworkInfo alloc] init];
+                NSString *currentRadioAccessTechnology = info.currentRadioAccessTechnology;
+                if (currentRadioAccessTechnology) {
+                    if ([currentRadioAccessTechnology isEqualToString:CTRadioAccessTechnologyLTE]) {
+                        _status = AENetworkStatusCellType4G;
+                        netStatus = AENetworkStatusCellType4G;
+                    } else if ([currentRadioAccessTechnology isEqualToString:CTRadioAccessTechnologyEdge] || [currentRadioAccessTechnology isEqualToString:CTRadioAccessTechnologyGPRS]) {
+                        _status = AENetworkStatusCellType2G;
+                        netStatus = AENetworkStatusCellType2G;
+                    } else {
+                        _status = AENetworkStatusCellType3G;
+                        netStatus = AENetworkStatusCellType3G;
+                    }
+                }
+            }
+                break;
+            case AFNetworkReachabilityStatusReachableViaWiFi:
+            {
+                _isNetworkStatusOK = YES;
+                _status = AENetworkStatusReachableViaWiFi;
+                netStatus = AENetworkStatusReachableViaWiFi;
+            }
+                break;
+            default:
+                break;
         }
         
-        block((AENetworkStatus)status);
+        if (block) {
+            block(netStatus);
+        }
     }];
     
 }

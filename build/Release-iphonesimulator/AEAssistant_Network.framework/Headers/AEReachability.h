@@ -9,10 +9,12 @@
 #import <Foundation/Foundation.h>
 
 typedef enum {
-    AENetworkStatusUnknown          = -1,
-    AENetworkStatusNotReachable     = 0,
-    AENetworkStatusReachableViaWWAN = 1,
-    AENetworkStatusReachableViaWiFi = 2,
+    AENetworkStatusUnknown = -1,
+    AENetworkStatusNotReachable = 0,
+    AENetworkStatusCellType2G = 1,
+    AENetworkStatusCellType3G = 2,
+    AENetworkStatusCellType4G = 3,
+    AENetworkStatusReachableViaWiFi = 4,
 }AENetworkStatus;
 
 @interface AEReachability : NSObject

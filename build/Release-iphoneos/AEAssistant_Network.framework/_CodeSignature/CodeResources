@@ -14,7 +14,7 @@
 		</data>
 		<key>Headers/AEReachability.h</key>
 		<data>
-		Z9IF1qtqDfSYvH4NfcOcpKRowzk=
+		qkYVg5c58fyD5BlhN2H0IOkotS4=
 		</data>
 		<key>Headers/AFHTTPClientV2.h</key>
 		<data>
@@ -30,7 +30,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		xkJLpG0mVTnL6puv7NJtEvcewhE=
+		J8CA4e2q1fKIKmQZtMjEnqv6GeI=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -65,11 +65,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Z9IF1qtqDfSYvH4NfcOcpKRowzk=
+			qkYVg5c58fyD5BlhN2H0IOkotS4=
 			</data>
 			<key>hash2</key>
 			<data>
-			aEiVO/DN8bCG0DyL3tiPmped5E8CEiHCj8JMCcs1LO0=
+			xoXwYl+fNi3EXqKzpO8mH3+HnpIOIHTd2sfeT7DORfE=
 			</data>
 		</dict>
 		<key>Headers/AFHTTPClientV2.h</key>

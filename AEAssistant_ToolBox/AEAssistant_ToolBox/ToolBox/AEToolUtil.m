@@ -144,7 +144,7 @@
 
 + (NSString *)currentAppBuildVersion {
     NSDictionary *infoDict = [[NSBundle mainBundle] infoDictionary];
-    NSString *version = [infoDict objectForKey:@"CFBundleVersionString"];
+    NSString *version = [infoDict objectForKey:@"CFBundleVersion"];
     return version;
 }
 
