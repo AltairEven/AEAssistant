@@ -1,6 +1,0 @@
-framework module AEAssistant_Manager {
-  umbrella header "AEAssistant_Manager.h"
-
-  export *
-  module * { export * }
-}

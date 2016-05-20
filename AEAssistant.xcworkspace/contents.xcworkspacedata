@@ -8,9 +8,6 @@
       location = "group:AEAssistant_Model/AEAssistant_Model.xcodeproj">
    </FileRef>
    <FileRef
-      location = "group:AEAssistant_Manager/AEAssistant_Manager.xcodeproj">
-   </FileRef>
-   <FileRef
       location = "group:AEAssistant_Network/AEAssistant_Network.xcodeproj">
    </FileRef>
    <FileRef

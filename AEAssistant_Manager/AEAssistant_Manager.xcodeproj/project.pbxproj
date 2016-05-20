@@ -26,6 +26,8 @@
 		1E20BF841CCE1E9D001BD6C9 /* KTCImageUploader.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E20BF7C1CCE1E9D001BD6C9 /* KTCImageUploader.m */; };
 		1E20BF871CCE1E9D001BD6C9 /* KTCThemeManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 1E20BF811CCE1E9D001BD6C9 /* KTCThemeManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		1E20BF881CCE1E9D001BD6C9 /* KTCThemeManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E20BF821CCE1E9D001BD6C9 /* KTCThemeManager.m */; };
+		1E3846BC1CEEA269009709F3 /* AUIThemeManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 1E3846BA1CEEA269009709F3 /* AUIThemeManager.h */; };
+		1E3846BD1CEEA269009709F3 /* AUIThemeManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E3846BB1CEEA269009709F3 /* AUIThemeManager.m */; };
 		1EAAC3B81CD873670005A4F7 /* AEAssistant_Network.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1EAAC3B61CD873670005A4F7 /* AEAssistant_Network.framework */; };
 		1EAAC3B91CD873670005A4F7 /* AEAssistant_ToolBox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1EAAC3B71CD873670005A4F7 /* AEAssistant_ToolBox.framework */; };
 		1EAAC3BB1CD8737D0005A4F7 /* AEAssistant_ThirdParty.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1EAAC3BA1CD8737D0005A4F7 /* AEAssistant_ThirdParty.framework */; };
@@ -40,6 +42,8 @@
 		1E20BF7C1CCE1E9D001BD6C9 /* KTCImageUploader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KTCImageUploader.m; sourceTree = "<group>"; };
 		1E20BF811CCE1E9D001BD6C9 /* KTCThemeManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KTCThemeManager.h; sourceTree = "<group>"; };
 		1E20BF821CCE1E9D001BD6C9 /* KTCThemeManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KTCThemeManager.m; sourceTree = "<group>"; };
+		1E3846BA1CEEA269009709F3 /* AUIThemeManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AUIThemeManager.h; sourceTree = "<group>"; };
+		1E3846BB1CEEA269009709F3 /* AUIThemeManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AUIThemeManager.m; sourceTree = "<group>"; };
 		1EAAC3B61CD873670005A4F7 /* AEAssistant_Network.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AEAssistant_Network.framework; path = "../../../../../Library/Developer/Xcode/DerivedData/AEAssistant-akgcrcjngfmswaefvmkbofjiwqur/Build/Products/Debug-iphoneos/AEAssistant_Network.framework"; sourceTree = "<group>"; };
 		1EAAC3B71CD873670005A4F7 /* AEAssistant_ToolBox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AEAssistant_ToolBox.framework; path = "../../../../../Library/Developer/Xcode/DerivedData/AEAssistant-akgcrcjngfmswaefvmkbofjiwqur/Build/Products/Debug-iphoneos/AEAssistant_ToolBox.framework"; sourceTree = "<group>"; };
 		1EAAC3BA1CD8737D0005A4F7 /* AEAssistant_ThirdParty.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AEAssistant_ThirdParty.framework; path = "../../../../../Library/Developer/Xcode/DerivedData/AEAssistant-akgcrcjngfmswaefvmkbofjiwqur/Build/Products/Debug-iphoneos/AEAssistant_ThirdParty.framework"; sourceTree = "<group>"; };
@@ -106,6 +110,8 @@
 			children = (
 				1E20BF811CCE1E9D001BD6C9 /* KTCThemeManager.h */,
 				1E20BF821CCE1E9D001BD6C9 /* KTCThemeManager.m */,
+				1E3846BA1CEEA269009709F3 /* AUIThemeManager.h */,
+				1E3846BB1CEEA269009709F3 /* AUIThemeManager.m */,
 			);
 			path = Theme;
 			sourceTree = "<group>";
@@ -117,6 +123,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1E3846BC1CEEA269009709F3 /* AUIThemeManager.h in Headers */,
 				1E20BF731CCE1E7B001BD6C9 /* AEAssistant_Manager.h in Headers */,
 				1E20BF831CCE1E9D001BD6C9 /* KTCImageUploader.h in Headers */,
 				1E20BF871CCE1E9D001BD6C9 /* KTCThemeManager.h in Headers */,
@@ -212,6 +219,7 @@
 			files = (
 				1E20BF841CCE1E9D001BD6C9 /* KTCImageUploader.m in Sources */,
 				1E20BF881CCE1E9D001BD6C9 /* KTCThemeManager.m in Sources */,
+				1E3846BD1CEEA269009709F3 /* AUIThemeManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

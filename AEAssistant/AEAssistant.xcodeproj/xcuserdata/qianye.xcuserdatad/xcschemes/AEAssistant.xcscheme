@@ -70,20 +70,6 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "1E20BF6E1CCE1E7B001BD6C9"
-               BuildableName = "AEAssistant_Manager.framework"
-               BlueprintName = "AEAssistant_Manager"
-               ReferencedContainer = "container:../AEAssistant_Manager/AEAssistant_Manager.xcodeproj">
-            </BuildableReference>
-         </BuildActionEntry>
-         <BuildActionEntry
-            buildForTesting = "YES"
-            buildForRunning = "YES"
-            buildForProfiling = "YES"
-            buildForArchiving = "YES"
-            buildForAnalyzing = "YES">
-            <BuildableReference
-               BuildableIdentifier = "primary"
                BlueprintIdentifier = "1E20BF961CCE2068001BD6C9"
                BuildableName = "AEAssistant_Model.framework"
                BlueprintName = "AEAssistant_Model"

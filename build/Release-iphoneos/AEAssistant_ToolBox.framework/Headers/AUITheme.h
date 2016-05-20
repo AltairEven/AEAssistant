@@ -9,16 +9,16 @@
 #import <UIKit/UIKit.h>
 
 
-extern NSString *const kAUIThemeTabItemKeyHome;
-extern NSString *const kAUIThemeTabItemKeyNews;
-extern NSString *const kAUIThemeTabItemKeyStrategy;
-extern NSString *const kAUIThemeTabItemKeyUserCenter;
+extern NSString *const kAUIThemeTabItemKeyFirst;
+extern NSString *const kAUIThemeTabItemKeySecond;
+extern NSString *const kAUIThemeTabItemKeyThird;
+extern NSString *const kAUIThemeTabItemKeyFourth;
 
 typedef enum {
-    AUITabbarItemTypeHome,
-    AUITabbarItemTypeNews,
-    AUITabbarItemTypeStrategy,
-    AUITabbarItemTypeUserCenter,
+    AUITabbarItemTypeFirst,
+    AUITabbarItemTypeSecond,
+    AUITabbarItemTypeThird,
+    AUITabbarItemTypeFourth,
     AUITabbarItemTypeAdditional//附加tabBarItem
 }AUITabbarItemType;
 

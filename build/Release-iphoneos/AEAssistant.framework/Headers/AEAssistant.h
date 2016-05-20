@@ -20,5 +20,4 @@ FOUNDATION_EXPORT const unsigned char AEAssistantVersionString[];
 #import <AEAssistant_Category/AEAssistant_Category.h>
 #import <AEAssistant_ToolBox/AEAssistant_ToolBox.h>
 #import <AEAssistant_Network/AEAssistant_Network.h>
-#import <AEAssistant_Manager/AEAssistant_Manager.h>
 #import <AEAssistant_Model/AEAssistant_Model.h>
