@@ -7,12 +7,9 @@
 //
 
 #import "InterfaceManager.h"
-#import "HttpRequestClient.h"
-#import <AEAssistant_ToolBox/AEAssistant_ToolBox.h>
 
-#define MAIN_GETINTERFACE     @"http://api.kidstc.com/json.php?mod=main&&act=getinterface"
 #define AppSDKVersion     @"0"
-#define kAppSDKVersionKey  @"kidsTCAppSDKVersionKeyNew"
+#define kAppSDKVersionKey  @"kAppSDKVersionKey"
 #define kInterfaceBundleVersion @"kInterfaceBundleVersion"
 
 static InterfaceManager *_sharedInstance = nil;
@@ -42,6 +39,7 @@ static InterfaceManager *_sharedInstance = nil;
             //未启动过
             [self cleanInterfaceInfo];
         }
+        [self refresh:nil];
     }
     return self;
 }
@@ -123,9 +121,12 @@ static InterfaceManager *_sharedInstance = nil;
 #pragma mark Public methods
 
 - (void)updateInterface {
+    if ([self.interfaceListAddress length] == 0) {
+        return;
+    }
     if (!self.downloadClient) {
         if (!self.downloadClient) {
-            self.downloadClient = [HttpRequestClient clientWithUrlString:MAIN_GETINTERFACE];
+            self.downloadClient = [HttpRequestClient clientWithUrlString:self.interfaceListAddress];
         }
     }
     NSDictionary *param = [NSDictionary dictionaryWithObjectsAndKeys:[self getConfigVersion], @"cfgver", @"1", @"app", [AEToolUtil currentAppVersion], @"appVersion", nil];

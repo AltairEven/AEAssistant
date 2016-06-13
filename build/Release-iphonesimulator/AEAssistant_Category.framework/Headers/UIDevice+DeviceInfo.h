@@ -20,4 +20,6 @@
 
 + (NSString *)deviceInfo;
 
++ (NSString *)deviceVersion;
+
 @end

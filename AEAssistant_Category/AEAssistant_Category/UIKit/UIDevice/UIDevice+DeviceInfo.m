@@ -7,6 +7,7 @@
 //
 
 #import "UIDevice+DeviceInfo.h"
+#import <sys/sysctl.h>
 
 static CTTelephonyNetworkInfo *_sharedTelephonyNetworkInfo;
 
@@ -30,7 +31,17 @@ static CTTelephonyNetworkInfo *_sharedTelephonyNetworkInfo;
 @implementation UIDevice (DeviceInfo)
 
 + (NSString *)deviceInfo {
-    return [NSString stringWithFormat: @"%@ %@ %@ %@ %@", [[UIDevice currentDevice] systemName], [[UIDevice currentDevice] systemVersion], [[UIDevice currentDevice] model], [[UIDevice currentDevice] localizedModel], [[[CTTelephonyNetworkInfo sharedTelephonyNetworkInfo] subscriberCellularProvider] carrierName]];
+    return [NSString stringWithFormat: @"%@ %@ %@ %@ %@", [[UIDevice currentDevice] systemName], [[UIDevice currentDevice] systemVersion], [UIDevice deviceVersion], [[UIDevice currentDevice] localizedModel], [[[CTTelephonyNetworkInfo sharedTelephonyNetworkInfo] subscriberCellularProvider] carrierName]];
+}
+
++ (NSString *)deviceVersion {
+    size_t size;
+    sysctlbyname("hw.machine", NULL, &size, NULL, 0);
+    char *machine = malloc(size);
+    sysctlbyname("hw.machine", machine, &size, NULL, 0);
+    NSString *platform = [NSString stringWithCString:machine encoding:NSUTF8StringEncoding];
+    free(machine);
+    return platform;
 }
 
 @end

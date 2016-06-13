@@ -9,6 +9,8 @@
 #import <UIKit/UIKit.h>
 #import "AFHTTPClientV2.h"
 
+extern NSString *const kServerResponsedLogoutNotification;
+
 typedef void(^ NetworkErrorBlcok) (NSError *error);
 
 @interface HttpRequestClient : NSObject
@@ -28,6 +30,10 @@ typedef void(^ NetworkErrorBlcok) (NSError *error);
 @property (nonatomic, assign) NSTimeInterval requestDurationTime;
 
 @property (nonatomic, strong) NetworkErrorBlcok errorBlock;
+
+@property (nonatomic, assign) BOOL displayDebugInfo;
+
+@property (nonatomic, assign) NSInteger logoutErrorCode;
 
 + (instancetype)defaultClient;
 

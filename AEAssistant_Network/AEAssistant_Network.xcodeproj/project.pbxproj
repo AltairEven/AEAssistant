@@ -30,11 +30,11 @@
 		1E20BF1D1CCE161C001BD6C9 /* AFHTTPClientV2.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E20BF151CCE161C001BD6C9 /* AFHTTPClientV2.m */; };
 		1E20BF1E1CCE161C001BD6C9 /* HttpRequestClient.h in Headers */ = {isa = PBXBuildFile; fileRef = 1E20BF161CCE161C001BD6C9 /* HttpRequestClient.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		1E20BF1F1CCE161C001BD6C9 /* HttpRequestClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E20BF171CCE161C001BD6C9 /* HttpRequestClient.m */; };
-		1E20BF221CCE16DA001BD6C9 /* InterfaceManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 1E20BF201CCE16DA001BD6C9 /* InterfaceManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1E20BF231CCE16DA001BD6C9 /* InterfaceManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E20BF211CCE16DA001BD6C9 /* InterfaceManager.m */; };
 		1E20BF291CCE18C8001BD6C9 /* AEAssistant_ThirdParty.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E20BF281CCE18C8001BD6C9 /* AEAssistant_ThirdParty.framework */; };
 		1E20BF5F1CCE1BF2001BD6C9 /* AEAssistant_Category.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E20BF5D1CCE1BF2001BD6C9 /* AEAssistant_Category.framework */; };
 		1E20BF601CCE1BF2001BD6C9 /* AEAssistant_ToolBox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E20BF5E1CCE1BF2001BD6C9 /* AEAssistant_ToolBox.framework */; };
+		1E66600B1D0569CD007C4546 /* InterfaceManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 1E6660091D0569CD007C4546 /* InterfaceManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1E66600C1D0569CD007C4546 /* InterfaceManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E66600A1D0569CD007C4546 /* InterfaceManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -49,11 +49,11 @@
 		1E20BF151CCE161C001BD6C9 /* AFHTTPClientV2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFHTTPClientV2.m; sourceTree = "<group>"; };
 		1E20BF161CCE161C001BD6C9 /* HttpRequestClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HttpRequestClient.h; sourceTree = "<group>"; };
 		1E20BF171CCE161C001BD6C9 /* HttpRequestClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HttpRequestClient.m; sourceTree = "<group>"; };
-		1E20BF201CCE16DA001BD6C9 /* InterfaceManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InterfaceManager.h; sourceTree = "<group>"; };
-		1E20BF211CCE16DA001BD6C9 /* InterfaceManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InterfaceManager.m; sourceTree = "<group>"; };
 		1E20BF281CCE18C8001BD6C9 /* AEAssistant_ThirdParty.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AEAssistant_ThirdParty.framework; path = "../../../../Library/Developer/Xcode/DerivedData/AEAssistant-akgcrcjngfmswaefvmkbofjiwqur/Build/Products/Debug-iphoneos/AEAssistant_ThirdParty.framework"; sourceTree = "<group>"; };
 		1E20BF5D1CCE1BF2001BD6C9 /* AEAssistant_Category.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AEAssistant_Category.framework; path = "../../../../Library/Developer/Xcode/DerivedData/AEAssistant-akgcrcjngfmswaefvmkbofjiwqur/Build/Products/Debug-iphoneos/AEAssistant_Category.framework"; sourceTree = "<group>"; };
 		1E20BF5E1CCE1BF2001BD6C9 /* AEAssistant_ToolBox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AEAssistant_ToolBox.framework; path = "../../../../Library/Developer/Xcode/DerivedData/AEAssistant-akgcrcjngfmswaefvmkbofjiwqur/Build/Products/Debug-iphoneos/AEAssistant_ToolBox.framework"; sourceTree = "<group>"; };
+		1E6660091D0569CD007C4546 /* InterfaceManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InterfaceManager.h; sourceTree = "<group>"; };
+		1E66600A1D0569CD007C4546 /* InterfaceManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InterfaceManager.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,8 +110,8 @@
 				1E20BF151CCE161C001BD6C9 /* AFHTTPClientV2.m */,
 				1E20BF161CCE161C001BD6C9 /* HttpRequestClient.h */,
 				1E20BF171CCE161C001BD6C9 /* HttpRequestClient.m */,
-				1E20BF201CCE16DA001BD6C9 /* InterfaceManager.h */,
-				1E20BF211CCE16DA001BD6C9 /* InterfaceManager.m */,
+				1E6660091D0569CD007C4546 /* InterfaceManager.h */,
+				1E66600A1D0569CD007C4546 /* InterfaceManager.m */,
 			);
 			path = Http;
 			sourceTree = "<group>";
@@ -125,9 +125,9 @@
 			files = (
 				1E20BF1A1CCE161C001BD6C9 /* AEReachability.h in Headers */,
 				1E20BF181CCE161C001BD6C9 /* AEHttpCookieManager.h in Headers */,
-				1E20BF221CCE16DA001BD6C9 /* InterfaceManager.h in Headers */,
 				1E20BF1E1CCE161C001BD6C9 /* HttpRequestClient.h in Headers */,
 				1E20BF1C1CCE161C001BD6C9 /* AFHTTPClientV2.h in Headers */,
+				1E66600B1D0569CD007C4546 /* InterfaceManager.h in Headers */,
 				1E20BF081CCE15DE001BD6C9 /* AEAssistant_Network.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -221,7 +221,7 @@
 			files = (
 				1E20BF1B1CCE161C001BD6C9 /* AEReachability.m in Sources */,
 				1E20BF191CCE161C001BD6C9 /* AEHttpCookieManager.m in Sources */,
-				1E20BF231CCE16DA001BD6C9 /* InterfaceManager.m in Sources */,
+				1E66600C1D0569CD007C4546 /* InterfaceManager.m in Sources */,
 				1E20BF1F1CCE161C001BD6C9 /* HttpRequestClient.m in Sources */,
 				1E20BF1D1CCE161C001BD6C9 /* AFHTTPClientV2.m in Sources */,
 			);
@@ -410,6 +410,7 @@
 				1E20C0DA1CCF0236001BD6C9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -12,13 +12,15 @@
 #import "InterfaceManager.h"
 #import <AEAssistant_ToolBox/AEAssistant_ToolBox.h>
 
+NSString *const kServerResponsedLogoutNotification = @"kServerResponsedLogoutNotification";
+
 @interface HttpRequestClient ()
 
 @property (nonatomic, strong) NSDate *startTime;
 
 @property (nonatomic, strong) NSDate *endTime;
 
-@property (nonnull, strong) AFHTTPClientV2 *httpClient;
+@property (nonatomic, strong) AFHTTPClientV2 *httpClient;
 
 @end
 
@@ -230,13 +232,17 @@
     }
     
     self.startTime = [NSDate date];
-    
-    //输出请求内容
-    NSLog(@"%@", self.urlString);
-    NSLog(@"%@", self.parameter);
+        
+    if (self.displayDebugInfo) {
+        //输出请求内容
+        NSLog(@"url:%@", self.urlString);
+        NSLog(@"param:%@", [NSString jsonFromObject:self.parameter]);
+    }
     
     [_httpClient requestWithBaseURLStr:weakSelf.urlString params:weakSelf.parameter httpMethod:weakSelf.methodType stringEncoding:weakSelf.stringEncoding timeout:weakSelf.timeoutSeconds success:^(AFHTTPClientV2 *request, id responseObject) {
-        
+        if (weakSelf.displayDebugInfo) {
+            NSLog(@"response:%@", [NSString jsonFromObject:responseObject]);
+        }
         weakSelf.endTime = [NSDate date];
         
         if (responseObject == nil) {
@@ -283,7 +289,9 @@
         }
         
     } failure:^(AFHTTPClientV2 *request, NSError *error) {
-        
+        if (error.code == self.logoutErrorCode) {
+            [[NSNotificationCenter defaultCenter] postNotificationName:kServerResponsedLogoutNotification object:error];
+        }
         weakSelf.endTime = [NSDate date];
         if (failure) {
             failure(weakSelf, error);

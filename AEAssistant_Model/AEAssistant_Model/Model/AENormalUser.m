@@ -10,7 +10,7 @@
 #import <AEAssistant_ThirdParty/AEAssistant_ThirdParty.h>
 
 #define USERDEFAULT_UID_KEY (@"UserDefaultUidKey")
-#define KEYCHAIN_SERVICE_UIDSKEY (@"com.KidsTC.iPhoneAPP.uid")
+#define KEYCHAIN_SERVICE_UIDSKEY ([NSString stringWithFormat:@"%@.uid", [[NSBundle mainBundle] bundleIdentifier]])
 
 static AENormalUser *_sharedInstance = nil;
 

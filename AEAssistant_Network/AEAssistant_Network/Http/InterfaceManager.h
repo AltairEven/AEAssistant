@@ -11,6 +11,8 @@
 
 @interface InterfaceManager : NSObject
 
+@property (nonatomic, copy) NSString *interfaceListAddress;
+
 @property (nonatomic, strong, readonly) NSDictionary *interfaceData;
 
 @property (nonatomic, strong, readonly) NSDictionary * URLMapWithAlias;
