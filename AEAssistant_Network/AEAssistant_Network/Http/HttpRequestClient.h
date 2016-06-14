@@ -27,6 +27,8 @@ typedef void(^ NetworkErrorBlcok) (NSError *error);
 
 @property (nonatomic, assign) HttpRequestMethod methodType;
 
+@property (nonatomic, strong) NSDictionary *userInfo;
+
 @property (nonatomic, assign) NSTimeInterval requestDurationTime;
 
 @property (nonatomic, strong) NetworkErrorBlcok errorBlock;
@@ -34,6 +36,10 @@ typedef void(^ NetworkErrorBlcok) (NSError *error);
 @property (nonatomic, assign) BOOL displayDebugInfo;
 
 @property (nonatomic, assign) NSInteger logoutErrorCode;
+
++ (void)setCommonUserInfo:(NSDictionary *)info;
+
++ (NSDictionary *)commonUserInfo;
 
 + (instancetype)defaultClient;
 

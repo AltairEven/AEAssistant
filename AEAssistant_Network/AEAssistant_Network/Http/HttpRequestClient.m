@@ -14,6 +14,8 @@
 
 NSString *const kServerResponsedLogoutNotification = @"kServerResponsedLogoutNotification";
 
+static NSDictionary *_commonUserInfo = nil;
+
 @interface HttpRequestClient ()
 
 @property (nonatomic, strong) NSDate *startTime;
@@ -73,6 +75,21 @@ NSString *const kServerResponsedLogoutNotification = @"kServerResponsedLogoutNot
     _urlAliasName = urlAliasName;
     self.urlString = [[InterfaceManager sharedManager] getURLStringWithAliasName:urlAliasName];
     _methodType = (HttpRequestMethod)[[InterfaceManager sharedManager] getURLSendDataMethodWithAliasName:urlAliasName];
+}
+
+- (void)setUserInfo:(NSDictionary *)userInfo {
+    _userInfo = userInfo;
+    _httpClient.userInfo = userInfo;
+}
+
++ (void)setCommonUserInfo:(NSDictionary *)info {
+    @synchronized (_commonUserInfo) {
+        _commonUserInfo = info;
+    }
+}
+
++ (NSDictionary *)commonUserInfo {
+    return _commonUserInfo;
 }
 
 
@@ -232,11 +249,19 @@ NSString *const kServerResponsedLogoutNotification = @"kServerResponsedLogoutNot
     }
     
     self.startTime = [NSDate date];
-        
+    
+    //common user info
+    if (_commonUserInfo) {
+        NSMutableDictionary *tempDic = [[NSMutableDictionary alloc] initWithDictionary:_commonUserInfo];
+        [tempDic addEntriesFromDictionary:self.userInfo];
+        _httpClient.userInfo = [tempDic copy];
+    }
+    
     if (self.displayDebugInfo) {
         //输出请求内容
         NSLog(@"url:%@", self.urlString);
         NSLog(@"param:%@", [NSString jsonFromObject:self.parameter]);
+        NSLog(@"userInfo:%@", self.userInfo);
     }
     
     [_httpClient requestWithBaseURLStr:weakSelf.urlString params:weakSelf.parameter httpMethod:weakSelf.methodType stringEncoding:weakSelf.stringEncoding timeout:weakSelf.timeoutSeconds success:^(AFHTTPClientV2 *request, id responseObject) {

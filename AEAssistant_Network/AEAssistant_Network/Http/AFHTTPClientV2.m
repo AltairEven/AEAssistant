@@ -47,6 +47,17 @@
     self.timeoutSeconds = seconds;
     self.stringEncoding = encoding;
     
+    if (userInfo) {
+        NSMutableArray *tempArray = [[NSMutableArray alloc] init];
+        [userInfo enumerateKeysAndObjectsUsingBlock:^(id  _Nonnull key, id  _Nonnull obj, BOOL * _Nonnull stop) {
+            NSString *appendParam = [NSString stringWithFormat:@"%@=%@", key, obj];
+            [tempArray addObject:appendParam];
+        }];
+        NSMutableString *tempString = [NSMutableString stringWithString:URLString];
+        [tempString appendString:[tempArray componentsJoinedByString:@"&"]];
+        URLString = [NSString stringWithString:tempString];
+    }
+    
     
     __weak AFHTTPClientV2 *weakSelf = self;
     AFHTTPSessionManager   *httpClient = [[AFHTTPSessionManager alloc] initWithBaseURL:nil];
@@ -104,6 +115,17 @@
                                   failure:(void (^)(AFHTTPClientV2 *request, NSError *error))failure
 {
     self.userInfo = userInfo;
+    
+    if (userInfo) {
+        NSMutableArray *tempArray = [[NSMutableArray alloc] init];
+        [userInfo enumerateKeysAndObjectsUsingBlock:^(id  _Nonnull key, id  _Nonnull obj, BOOL * _Nonnull stop) {
+            NSString *appendParam = [NSString stringWithFormat:@"%@=%@", key, obj];
+            [tempArray addObject:appendParam];
+        }];
+        NSMutableString *tempString = [NSMutableString stringWithString:URLString];
+        [tempString appendString:[tempArray componentsJoinedByString:@"&"]];
+        URLString = [NSString stringWithString:tempString];
+    }
     
     __weak AFHTTPClientV2 *weakSelf = self;
     AFHTTPSessionManager   *httpClient = [[AFHTTPSessionManager alloc] initWithBaseURL:nil];

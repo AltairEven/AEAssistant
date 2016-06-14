@@ -142,7 +142,11 @@ static InterfaceManager *_sharedInstance = nil;
 }
 
 - (NSString *)getURLStringWithAliasName:(NSString *)aliasName {
-    return [[self.URLMapWithAlias objectForKey:aliasName] objectForKey:@"url"];
+    NSString *urlString = [[self.URLMapWithAlias objectForKey:aliasName] objectForKey:@"url"];
+    if ([urlString rangeOfString:@"?"].location == NSNotFound) {
+        urlString = [NSString stringWithFormat:@"%@?", urlString];
+    }
+    return urlString;
 }
 
 - (HttpRequestMethod)getURLSendDataMethodWithAliasName:(NSString *)aliasName {
