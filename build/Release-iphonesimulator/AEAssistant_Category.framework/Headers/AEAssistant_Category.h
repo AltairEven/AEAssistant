@@ -34,6 +34,7 @@ FOUNDATION_EXPORT const unsigned char AEAssistant_CategoryVersionString[];
 #import "NSString+SubString.h"
 #import "NSString+Convertion.h"
 #import "NSString+Bounding.h"
+#import "NSString+AES.h"
 
 //NSAttributedString
 #import "NSAttributedString+Attributes.h"

@@ -10,6 +10,7 @@
 
 @interface NSString (Hash)
 
+//sha1
 - (NSString *)hashString;
 
 @end
