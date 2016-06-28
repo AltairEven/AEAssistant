@@ -262,6 +262,7 @@ static NSDictionary *_commonUserInfo = nil;
         NSLog(@"url:%@", self.urlString);
         NSLog(@"param:%@", [NSString jsonFromObject:self.parameter]);
         NSLog(@"userInfo:%@", self.userInfo);
+        NSLog(@"timeout:%f", self.timeoutSeconds);
     }
     
     [_httpClient requestWithBaseURLStr:weakSelf.urlString params:weakSelf.parameter httpMethod:weakSelf.methodType stringEncoding:weakSelf.stringEncoding timeout:weakSelf.timeoutSeconds success:^(AFHTTPClientV2 *request, id responseObject) {

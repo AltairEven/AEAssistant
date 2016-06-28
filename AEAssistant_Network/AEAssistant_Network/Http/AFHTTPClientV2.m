@@ -62,7 +62,7 @@
     __weak AFHTTPClientV2 *weakSelf = self;
     AFHTTPSessionManager   *httpClient = [[AFHTTPSessionManager alloc] initWithBaseURL:nil];
     
-    NSURLRequest *request = nil;
+    NSMutableURLRequest *request = nil;
     if (httpMethod == HttpRequestMethodGET) {
         NSError *error = nil;
         request = [httpClient.requestSerializer requestWithMethod:@"GET" URLString:URLString parameters:params error:&error];
@@ -77,12 +77,13 @@
         }
     }else if (httpMethod == HttpRequestMethodDELETE){
         NSError *error = nil;
-        request = [httpClient.requestSerializer requestWithMethod:@"GET" URLString:URLString parameters:params error:&error];
+        request = [httpClient.requestSerializer requestWithMethod:@"DELETE" URLString:URLString parameters:params error:&error];
         if (error && failure) {
             failure(weakSelf, error);
         }
     }
-    httpClient.requestSerializer.timeoutInterval = weakSelf.timeoutSeconds;
+    [httpClient.requestSerializer setTimeoutInterval:weakSelf.timeoutSeconds];
+    request.timeoutInterval = weakSelf.timeoutSeconds;
     httpClient.requestSerializer.stringEncoding = weakSelf.stringEncoding;
     for (NSString *key in [self.userInfo allKeys]) {
         NSString *value = [self.userInfo objectForKey:key];
@@ -130,7 +131,7 @@
     __weak AFHTTPClientV2 *weakSelf = self;
     AFHTTPSessionManager   *httpClient = [[AFHTTPSessionManager alloc] initWithBaseURL:nil];
     NSError *error = nil;
-    NSURLRequest *request = [httpClient.requestSerializer requestWithMethod:@"POST" URLString:URLString parameters:parameters error:&error];
+    NSMutableURLRequest *request = [httpClient.requestSerializer requestWithMethod:@"POST" URLString:URLString parameters:parameters error:&error];
     if (error && failure) {
         failure(weakSelf, error);
     }
@@ -140,6 +141,8 @@
             [httpClient.requestSerializer setValue:value forHTTPHeaderField:key];
         }
     }
+    [httpClient.requestSerializer setTimeoutInterval:weakSelf.timeoutSeconds];
+    request.timeoutInterval = weakSelf.timeoutSeconds;
     httpClient.responseSerializer.acceptableContentTypes = [NSSet setWithObjects:@"application/json", @"text/json", @"text/javascript", @"text/xml", @"text/html", @"text/plain",nil];
     [(AFJSONResponseSerializer *)httpClient.responseSerializer setRemovesKeysWithNullValues:YES];
     
