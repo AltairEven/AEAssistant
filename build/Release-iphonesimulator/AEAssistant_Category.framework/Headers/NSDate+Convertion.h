@@ -34,13 +34,21 @@ typedef struct {
  */
 + (NSString *)formatTimeStamp:(NSTimeInterval)timeSeconds withTimeFormat:(NSString *)timeFormatStr timeZone:(NSString *)timeZoneStr;
 /**
- *  将秒转换成字符串(时分秒，0则不返回改单位)
+ *  将秒转换成字符串(天时分秒，0则不返回改单位)
  *
  *  @param interval 秒
  *
  *  @return 字符串
  */
 + (NSString *)timeStringFromTimeInterval:(NSTimeInterval)interval;
+/**
+ *  将秒转换成字符串(天时分秒，0则不返回改单位，最多取三个单位，从最大单位取起)
+ *
+ *  @param interval 秒
+ *
+ *  @return 字符串
+ */
++ (NSString *)limitedTimeStringFromTimeInterval:(NSTimeInterval)interval;
 /**
  *  将秒转换成字符串(天时分秒，0显示00)
  *

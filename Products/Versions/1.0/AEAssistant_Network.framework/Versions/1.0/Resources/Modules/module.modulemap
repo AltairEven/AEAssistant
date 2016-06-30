@@ -1,6 +1,0 @@
-framework module AEAssistant_Network {
-  umbrella header "AEAssistant_Network.h"
-
-  export *
-  module * { export * }
-}

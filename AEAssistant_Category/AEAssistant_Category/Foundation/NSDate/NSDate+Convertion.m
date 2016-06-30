@@ -99,6 +99,28 @@ static NSDateFormatter* CreateDateFormatter(NSString *format)
     return [NSString stringWithFormat:@"%02li秒", (long)seconds];
 }
 
++ (NSString *)limitedTimeStringFromTimeInterval:(NSTimeInterval)interval {
+    NSInteger ti = (NSInteger)interval;
+    NSInteger seconds = ti % 60;
+    NSInteger minutes = (ti / 60) % 60;
+    NSInteger days = (ti / 86400);
+    NSInteger hours = (ti / 3600 ) % 24;
+    
+    if (days > 0) {
+        return [NSString stringWithFormat:@"%li天%02li小时%02li分", (long)days, (long)hours, (long)minutes];
+    }
+    
+    if (hours > 0) {
+        return [NSString stringWithFormat:@"%02li小时%02li分%02li秒", (long)hours, (long)minutes, (long)seconds];
+    }
+    
+    if (minutes > 0) {
+        return [NSString stringWithFormat:@"%02li分%02li秒", (long)minutes, (long)seconds];
+    }
+    
+    return [NSString stringWithFormat:@"%02li秒", (long)seconds];
+}
+
 
 + (NSString *)timeDHMSStringWithInterval:(NSTimeInterval)interval showDay:(BOOL)show {
     NSUInteger intTime = interval;

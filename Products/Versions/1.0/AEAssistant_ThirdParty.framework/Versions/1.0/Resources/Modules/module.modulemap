@@ -1,6 +1,0 @@
-framework module AEAssistant_ThirdParty {
-  umbrella header "AEAssistant_ThirdParty.h"
-
-  export *
-  module * { export * }
-}
