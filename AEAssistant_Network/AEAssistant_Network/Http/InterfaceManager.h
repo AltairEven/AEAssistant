@@ -7,7 +7,6 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "HttpRequestClient.h"
 
 @interface InterfaceManager : NSObject
 
@@ -23,6 +22,6 @@
 
 - (NSString *)getURLStringWithAliasName:(NSString *)aliasName;
 
-- (HttpRequestMethod)getURLSendDataMethodWithAliasName:(NSString *)aliasName;
+- (NSString *)getURLSendDataMethodWithAliasName:(NSString *)aliasName;
 
 @end

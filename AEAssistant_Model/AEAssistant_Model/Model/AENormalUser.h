@@ -21,9 +21,9 @@
 
 @property (nonatomic, readonly) BOOL hasLogin;
 
-@property (nonatomic, strong) HttpRequestClient *logoutRequest;
+@property (nonatomic, strong) AEHttpRequestHandler *logoutRequest;
 
-@property (nonatomic, strong) HttpRequestClient *checkLoginRequest;
+@property (nonatomic, strong) AEHttpRequestHandler *checkLoginRequest;
 
 + (instancetype)currentUser;
 

@@ -7,6 +7,7 @@
 //
 
 #import "InterfaceManager.h"
+#import "AEHttpRequestHandler.h"
 
 #define AppSDKVersion     @"0"
 #define kAppSDKVersionKey  @"kAppSDKVersionKey"
@@ -16,7 +17,7 @@ static InterfaceManager *_sharedInstance = nil;
 
 @interface InterfaceManager ()
 
-@property (nonatomic, strong) HttpRequestClient *downloadClient;
+@property (nonatomic, strong) AEHttpRequestHandler *downloadClient;
 
 - (void)cleanInterfaceInfo;
 
@@ -126,15 +127,15 @@ static InterfaceManager *_sharedInstance = nil;
     }
     if (!self.downloadClient) {
         if (!self.downloadClient) {
-            self.downloadClient = [HttpRequestClient clientWithUrlString:self.interfaceListAddress];
+            self.downloadClient = [AEHttpRequestHandler clientWithUrlString:self.interfaceListAddress];
         }
     }
     NSDictionary *param = [NSDictionary dictionaryWithObjectsAndKeys:[self getConfigVersion], @"cfgver", @"1", @"app", [AEToolUtil currentAppVersion], @"appVersion", nil];
     
     __weak InterfaceManager *weakSelf = self;
-    [weakSelf.downloadClient startHttpRequestWithParameter:param success:^(HttpRequestClient *client, NSDictionary *responseData) {
+    [weakSelf.downloadClient startHttpRequestWithParameter:param success:^(AEHttpRequestHandler *handler, NSDictionary *responseData) {
         [weakSelf downloadInterfaceListSusseed:responseData];
-    } failure:^(HttpRequestClient *client, NSError *error) {
+    } failure:^(AEHttpRequestHandler *handler, NSError *error) {
         [weakSelf downloadInterfaceListFailed:error];
     }];
     
@@ -149,12 +150,12 @@ static InterfaceManager *_sharedInstance = nil;
     return urlString;
 }
 
-- (HttpRequestMethod)getURLSendDataMethodWithAliasName:(NSString *)aliasName {
+- (NSString *)getURLSendDataMethodWithAliasName:(NSString *)aliasName {
     NSString * httpMethod = [[self.URLMapWithAlias objectForKey:aliasName] objectForKey:@"method"];
-    if ([[httpMethod lowercaseString] isEqualToString:@"post"]) {
-        return HttpRequestMethodPOST ;
+    if (!httpMethod || ![httpMethod isKindOfClass:[NSString class]] || [httpMethod length] == 0) {
+        return nil;
     }
-    return HttpRequestMethodGET;
+    return [httpMethod uppercaseString];
 }
 
 @end

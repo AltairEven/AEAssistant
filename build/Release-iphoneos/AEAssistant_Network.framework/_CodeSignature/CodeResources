@@ -6,11 +6,23 @@
 	<dict>
 		<key>Headers/AEAssistant_Network.h</key>
 		<data>
-		1WU2jWjpzkXAwdbX3A93RlTKZ/U=
+		gnhUtOn/zWP3u00hAKqp7BjaKKo=
 		</data>
 		<key>Headers/AEHttpCookieManager.h</key>
 		<data>
 		EfKUKuMiUFoe8Zn/EaA1SLR1DJs=
+		</data>
+		<key>Headers/AEHttpRequestConfiguration.h</key>
+		<data>
+		KtiH4hWGR/RJXQrX5MmD0EB21uA=
+		</data>
+		<key>Headers/AEHttpRequestHandler.h</key>
+		<data>
+		ia+AgdTXKqiSr0Td1iUhtkcpkHk=
+		</data>
+		<key>Headers/AEHttpRequestUserInfo.h</key>
+		<data>
+		UNa/XgRTEgx0Nz0KqXer75Qvgr4=
 		</data>
 		<key>Headers/AEReachability.h</key>
 		<data>
@@ -20,13 +32,17 @@
 		<data>
 		iEGpCtM3nwnGL6gvM5pOROXWhz0=
 		</data>
+		<key>Headers/AFHttpRequestWrapper.h</key>
+		<data>
+		WapZVyGOpthma/ebPb0tC/8RKdc=
+		</data>
 		<key>Headers/HttpRequestClient.h</key>
 		<data>
-		mE4ChLA5JGM5/+IEdUn3R599r2M=
+		KPpyWG4QsFFTBiuq+C+TTl7SuW8=
 		</data>
 		<key>Headers/InterfaceManager.h</key>
 		<data>
-		9mMCF8v+s/jFx7y8e78bI0Y6dlE=
+		YYU15vtIpwPMjP0H+B21rBVuTSM=
 		</data>
 		<key>Info.plist</key>
 		<data>
@@ -43,11 +59,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			1WU2jWjpzkXAwdbX3A93RlTKZ/U=
+			gnhUtOn/zWP3u00hAKqp7BjaKKo=
 			</data>
 			<key>hash2</key>
 			<data>
-			XWc3Flb8Jc/uEWw9QQwSjInPSrDGWOjnqoqIqYyUm34=
+			8RJgommIt5fwxwGI1Le90VuyEoen/a4qNhbP2dc+9Vo=
 			</data>
 		</dict>
 		<key>Headers/AEHttpCookieManager.h</key>
@@ -59,6 +75,39 @@
 			<key>hash2</key>
 			<data>
 			oly1hGOorx3oFq6qgEXkUwNzJ3iGTC5zRd5ul1uV/eY=
+			</data>
+		</dict>
+		<key>Headers/AEHttpRequestConfiguration.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			KtiH4hWGR/RJXQrX5MmD0EB21uA=
+			</data>
+			<key>hash2</key>
+			<data>
+			kd1iYQ92BrIEEl1hOapnayfopQXOAEcOvSHeKhbp0i8=
+			</data>
+		</dict>
+		<key>Headers/AEHttpRequestHandler.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			ia+AgdTXKqiSr0Td1iUhtkcpkHk=
+			</data>
+			<key>hash2</key>
+			<data>
+			VOUaPjwXhcHXHJSYSdCPeMIwE9WdEPvhsZu9uOJu/xY=
+			</data>
+		</dict>
+		<key>Headers/AEHttpRequestUserInfo.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			UNa/XgRTEgx0Nz0KqXer75Qvgr4=
+			</data>
+			<key>hash2</key>
+			<data>
+			9Nb2Pvw9q2biG/UcMoosXVmi+0SEOiJ02pUc+RDqm88=
 			</data>
 		</dict>
 		<key>Headers/AEReachability.h</key>
@@ -83,26 +132,37 @@
 			N3xczoX9bENStWxg93GQ/QV4hxSYEZPEmScsfJX81i4=
 			</data>
 		</dict>
+		<key>Headers/AFHttpRequestWrapper.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			WapZVyGOpthma/ebPb0tC/8RKdc=
+			</data>
+			<key>hash2</key>
+			<data>
+			QHQ6w6tMAjD3+DXeEI+vMGns6p/KCoZ6wKgJtebQmmA=
+			</data>
+		</dict>
 		<key>Headers/HttpRequestClient.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			mE4ChLA5JGM5/+IEdUn3R599r2M=
+			KPpyWG4QsFFTBiuq+C+TTl7SuW8=
 			</data>
 			<key>hash2</key>
 			<data>
-			izUbWMJJN+CeDfBudaiu9Lnomorlc1VzztSedCduevk=
+			bO8JLcMbb+BYordb4xZlFBXPa9RTrS6Rqf+/bk72izU=
 			</data>
 		</dict>
 		<key>Headers/InterfaceManager.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			9mMCF8v+s/jFx7y8e78bI0Y6dlE=
+			YYU15vtIpwPMjP0H+B21rBVuTSM=
 			</data>
 			<key>hash2</key>
 			<data>
-			pEBRWA7Rw2G6fsElpS9hlJicaWGJTLdl4AKI2R7Qikg=
+			aL8cNOwq+U7T2lhm159K6qjkv4cuvj2MO/e6ll+/oV0=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

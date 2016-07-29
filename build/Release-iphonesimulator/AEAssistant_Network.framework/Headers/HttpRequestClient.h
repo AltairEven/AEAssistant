@@ -35,11 +35,13 @@ typedef void(^ NetworkErrorBlcok) (NSError *error);
 
 @property (nonatomic, assign) BOOL displayDebugInfo;
 
-@property (nonatomic, assign) NSInteger logoutErrorCode;
-
 + (void)setCommonUserInfo:(NSDictionary *)info;
 
 + (NSDictionary *)commonUserInfo;
+
++ (void)setLogoutErrorCode:(NSNumber *)codeNumber;
+
++ (NSNumber *)logoutErrorCode;
 
 + (instancetype)defaultClient;
 

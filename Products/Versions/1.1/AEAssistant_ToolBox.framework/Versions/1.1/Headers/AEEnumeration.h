@@ -10,9 +10,10 @@
 #define AEEnumeration_h
 
 typedef enum {
-    HttpRequestMethodGET = 0,
-    HttpRequestMethodPOST = 1,
-    HttpRequestMethodDELETE = 2
+    HttpRequestMethodUnknown = 0,
+    HttpRequestMethodGET = 1,
+    HttpRequestMethodPOST = 2,
+    HttpRequestMethodDELETE = 3
 }HttpRequestMethod;
 
 #endif /* AEEnumeration_h */

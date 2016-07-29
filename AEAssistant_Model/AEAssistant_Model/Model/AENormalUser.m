@@ -87,12 +87,12 @@ static AENormalUser *_sharedInstance = nil;
             return;
         }
         __weak typeof (self) weakSelf = self;
-        [weakSelf.checkLoginRequest startHttpRequestWithParameter:param success:^(HttpRequestClient *client, NSDictionary *responseData) {
+        [weakSelf.checkLoginRequest startHttpRequestWithParameter:param success:^(AEHttpRequestHandler *handler, NSDictionary *responseData) {
             _hasLogin = YES;
             if (result) {
                 result(_hasLogin, responseData, nil);
             }
-        } failure:^(HttpRequestClient *client, NSError *error) {
+        } failure:^(AEHttpRequestHandler *handler, NSError *error) {
             _hasLogin = NO;
             [weakSelf clearLoginInfo];
             if (result) {
@@ -114,11 +114,11 @@ static AENormalUser *_sharedInstance = nil;
         }
         
         __weak typeof(self) weakSelf = self;
-        [weakSelf.logoutRequest startHttpRequestWithParameter:param success:^(HttpRequestClient *client, NSDictionary *responseData) {
+        [weakSelf.logoutRequest startHttpRequestWithParameter:param success:^(AEHttpRequestHandler *handler, NSDictionary *responseData) {
             if (success) {
                 success(responseData);
             }
-        } failure:^(HttpRequestClient *client, NSError *error) {
+        } failure:^(AEHttpRequestHandler *handler, NSError *error) {
             if (failure) {
                 failure(error);
             }

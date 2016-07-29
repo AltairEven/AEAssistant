@@ -18,8 +18,11 @@ FOUNDATION_EXPORT const unsigned char AEAssistant_NetworkVersionString[];
 
 #import <AEAssistant_ToolBox/AEAssistant_ToolBox.h>
 
-#import "HttpRequestClient.h"
 #import "AEReachability.h"
 #import "AEHttpCookieManager.h"
-#import "AFHTTPClientV2.h"
 #import "InterfaceManager.h"
+
+#import "AFHttpRequestWrapper.h"
+#import "AEHttpRequestHandler.h"
+#import "AEHttpRequestConfiguration.h"
+#import "AEHttpRequestUserInfo.h"
